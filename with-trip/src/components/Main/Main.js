@@ -12,6 +12,7 @@ import calendar from '../../static/calendar.png';
 
 import loginApp from '../../static/loginApp.png';
 import homeApp from '../../static/homeApp.png';
+import writeApp from '../../static/writeApp.png';
 import attendApp from '../../static/attendApp.png';
 import detailApp from '../../static/detailApp.png';
 
@@ -131,6 +132,9 @@ const Main = () => {
                             </div>
                             <div>
                                 <img src={homeApp} alt="지도 앱 화면" />
+                            </div>
+                            <div>
+                                <img src={writeApp} alt="내가 쓴 트립 앱 화면" />
                             </div>
                             <div>
                                 <img src={attendApp} alt="참여 현황 앱 화면" />
