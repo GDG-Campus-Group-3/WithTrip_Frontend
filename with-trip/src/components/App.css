@@ -31,6 +31,7 @@ body {
 input, button {
     font-family: 'Noto Sans KR', sans-serif;
     outline: none;
+    border: 0;
 }
 a,label, input[type="checkbox"] {
     text-decoration: none;
