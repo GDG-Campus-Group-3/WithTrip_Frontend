@@ -1,109 +1,183 @@
-/* 공통 css */
-.main-wrapper {
-    overflow-x: hidden;
-    height: 100%;
-}
-.main-title {
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.2px;
-}
-.main-sub-title {
-    line-height: 20px;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 27px;
-}
-.main-sub-title h3 {
-    font-weight: 700;
-}
-.main-wrapper button {
-    font-weight: 700;
-    margin-top: 15px;
-    width: 235px;
-    height: 65px;
-    background: #2F80ED;
-    color: white;
-    border-radius: 35px;
-    padding: 16px 0px;
-    font-size: 22px;
-    letter-spacing: 0.1px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 8px;
-}
+@media screen and (min-width: 665px) {
+    /* 공통 css */
+    .main-wrapper {
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .main-title {
+        font-size: 46px;
+        line-height: 57px;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+    .main-sub-title {
+        line-height: 22px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 27px;
+    }
+    .main-sub-title h3 {
+        font-weight: 600;
+    }
+    .main-wrapper button {
+        font-weight: 700;
+        margin-top: 15px;
+        width: 235px;
+        height: 65px;
+        background: #2F80ED;
+        color: white;
+        border-radius: 35px;
+        padding: 16px 0px;
+        font-size: 22px;
+        letter-spacing: 0.1px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 8px;
+    }
+    .main-logo {
+        color: white;
+        font-size: 24px;
+        letter-spacing: -0.7px;
+        font-weight: 800;
+        padding: 15px 15px;
+        text-align: left !important;
+    }
+    .mobile {
+        display: none;
+    }
+    .pc {
+        display: block;
+    }
+    .main-second .main-title, .main-third .main-title {
+        color: #252B42;
+    }   
+    .main-second .main-sub-title, .main-third .main-sub-title {
+        color: #374754; 
+    }
 
-/* 첫번째 콘텐츠 */
-.main-first {
-    width: 100%;
-    height: 820px;
-    background: linear-gradient(39.97deg, #0E67DF 0.79%, #965CD1 79.29%);
-}
-.main-logo {
-    color: white;
-    font-size: 24px;
-    letter-spacing: -0.7px;
-    font-weight: 800;
-    padding: 15px 15px;
-}
-.main-first-content {
-    margin-top: 45px;
-    color: white;
-    text-align: center;
-}
-.main-first-content img {
-    margin-top: 40px;
-}
+    /* 첫번째 콘텐츠 */
+    .mobile {
+        display: none;
+    }
+    .main-first {
+        width: 100%;
+        height: 820px;
+        background: linear-gradient(39.97deg, #0E67DF 0.79%, #965CD1 79.29%);
+    }
+    .main-first-content {
+        width: 950px;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+    }
+    .main-first-content .main-title {
+        margin-top: 40px;
+    }
+    .main-first-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .main-first-wrapper img {
+        width: 300px;
+    }
+    .main-first-wrapper h1 {
+        font-size: 55px;
+        text-align: left;
+    }
+    .main-first-wrapper button {
+        margin-top: 70px;
+    }
 
-/* 두번째 콘텐츠 */
-.main-second {
-    width: 100%;
-    /* height: 1100px; */
-    background: white;
-}
-.main-second-content {
-    padding: 80px 0px;
-}
-.main-second-content .main-advantage {
-    margin: 0 auto;
-    margin-top: 80px;
-    width: 260px;
-}
-.main-second-content .main-advantage:last-child {
-    width: 275px;
-}
-.main-second-content .main-advantage-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.main-second-content .main-advantage-title h3 {
-    font-size: 22px;
-    margin-left: 10px;
-}
-.main-second-content .main-advantage p {
-    margin: 0 auto;
-    width: 260px;
-}
+    /* 두번째 콘텐츠 */
+    .main-second {
+        width: 100%;
+        background: white;
+    }
+    .main-second-content {
+        padding: 100px 0px;
+    }
+    .main-second-content .main-advantage-wrapper {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 150px;
+        display: flex;
+        color: #252B42;
+    }
+    .main-second-content .main-advantage {
+        margin: 0 auto;
+        width: 280px;
+    }
+    .main-second-content .main-advantage-title {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .main-second-content .main-advantage-title h3 {
+        font-size: 22px;
+        margin-left: 10px;
+    }
 
-.main-third {
-    padding: 90px 0px;
-    background: #F2F2F2;
-    text-align: center;
-}
-.main-third-content button {
-    margin-top: 50px;
-}
-.main-third-content img {
-    width: 100%;
-}
+    .main-third {
+        padding: 120px 0px;
+        background: #F2F2F2;
+        text-align: center;
+    }
+    .main-third-content button {
+        margin-top: 50px;
+    }
+    .main-third-content img {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .main-third-content .main-image-wrapper {
+        margin-top: 90px;
+    }
 
-.footer {
-    text-align: center;
-    background: #3d3d3d;
-    height: 100px;
-    padding-top: 10px;
-    color: white;
+    .footer {
+        text-align: center;
+        background: #3d3d3d;
+        height: 100px;
+        padding-top: 10px;
+        color: white;
+    }
+    .footer a {
+        color: white;
+    }
 }
-.footer a {
-    color: white;
+@media screen and (max-width: 1050px) {
+    .main-first-content {
+        width: 97%
+    }
+    .main-first-wrapper h1 {
+        font-size: 1em;
+    }
+    .main-second-content .main-advantage-wrapper {
+        width: 97%;
+    }
+    .main-second-content .main-advantage-title h3 {
+        font-size: 1.2em;
+    }
+    .main-second-content .main-advantage {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-wrapper button {
+        width: 200px;
+        height: 59px;
+        font-size: 20px;
+    }
+    .main-first-wrapper h1 {
+        font-size: 35px;
+    }
+    .main-first-wrapper img {
+        width: 240px;
+    }
+    .main-second-content .main-advantage-wrapper {
+        width: 95%;
+    }
+    .main-second-content .main-advantage-title h3 {
+        font-size: 1em;
+    }
 }

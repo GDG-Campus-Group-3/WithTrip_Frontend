@@ -1,23 +1,41 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './Main.css';
+import './Main-Media.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import appMain from '../../static/appMainImage.png';
-import appContents from '../../static/appContentsImage.png';
 import travelMate from '../../static/travel-mate.png';
 import restaurant from '../../static/restaurant.png';
 import calendar from '../../static/calendar.png';
 
+import loginApp from '../../static/loginApp.png';
+import homeApp from '../../static/homeApp.png';
+import attendApp from '../../static/attendApp.png';
+import detailApp from '../../static/detailApp.png';
+
 const Main = () => {
+    var settings = {
+        arrows : false,
+        infinite: true,
+        autoplay : true,
+        autoplaySpeed : 1500,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    };
+
     return (
         <div className="main-wrapper">
             <div className="main-first">
-                <div className="main-logo">
-                    <p>withTrip</p>
-                </div>
+                <div className="main-first-content mobile">
+                    <div className="main-logo">
+                        <p>withTrip</p>
+                    </div>
 
-                <div className="main-first-content">
                     <div className="main-title">
-                        <h1>함께하는 여행</h1>
+                        <h1>함께하는 여행,</h1>
                         <h1>위드트립</h1>
                     </div>
                     
@@ -25,8 +43,31 @@ const Main = () => {
                         <p>설레는 장소에서 함께 할 여행 메이트를 찾아보세요!</p>
                     </div>                    
 
-                    <img src={appMain} alt="위드트립 앱 메인화면" />
+                    <img src={appMain} alt="위드트립 앱 메인화면" /><br/>
                     <button>앱 다운로드</button>
+                </div>
+
+                <div className="main-first-content pc">
+                    <div className="main-logo">
+                        <p>withTrip</p>
+                    </div>
+
+                    <div className="main-first-wrapper">
+                        <img src={appMain} alt="위드트립 앱 메인화면" />
+                        
+                        <div className="main-first-right">
+                            <div className="main-title">
+                                <h1>함께하는 여행,</h1>
+                                <h1>위드트립</h1>
+                            </div>
+                            
+                            <div className="main-sub-title">
+                                <p>설레는 장소에서 함께 할 여행 메이트를 찾아보세요!</p>
+                            </div> 
+
+                            <button>앱 다운로드</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -42,29 +83,30 @@ const Main = () => {
                         <h3>위드트립과 함께라면</h3>
                     </div>    
                     
-
-                    <div className="main-advantage">
-                        <div className="main-advantage-title">
-                            <img src={travelMate} alt="여행 메이트 만들기" />
-                            <h3>여행 메이트 만들기</h3>
+                    <div className="main-advantage-wrapper">
+                        <div className="main-advantage">
+                            <div className="main-advantage-title">
+                                <img src={travelMate} alt="여행 메이트 만들기" />
+                                <h3>여행 메이트 만들기</h3>
+                            </div>
+                            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                         </div>
-                        <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                    </div>
 
-                    <div className="main-advantage">
-                        <div className="main-advantage-title">
-                            <img src={restaurant} alt="국내여행의 모든 것 확인하기" />
-                            <h3>장소, 활동, 음식 등<br/>국내여행의 모든 것</h3>
+                        <div className="main-advantage">
+                            <div className="main-advantage-title">
+                                <img src={restaurant} alt="국내여행의 모든 것 확인하기" />
+                                <h3>장소, 활동, 음식 등<br/>국내여행의 모든 것</h3>
+                            </div>
+                            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                         </div>
-                        <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                    </div>
 
-                    <div className="main-advantage">
-                        <div className="main-advantage-title">
-                            <img src={calendar} alt="일정 만들기" />
-                            <h3>쉽고 빠르게 일정 만들기</h3>
+                        <div className="main-advantage">
+                            <div className="main-advantage-title">
+                                <img src={calendar} alt="일정 만들기" />
+                                <h3>쉽고 빠르게 일정 만들기</h3>
+                            </div>
+                            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                         </div>
-                        <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +124,22 @@ const Main = () => {
 
                     <button>앱 다운로드</button>
                     
-                    <img src={appContents} alt="위드트립 전체적인 이미지 확인하기" />
+                    <div className="main-image-wrapper">
+                        <Slider {...settings}>
+                            <div>
+                                <img src={loginApp} alt="로그인 앱 화면" />
+                            </div>
+                            <div>
+                                <img src={homeApp} alt="지도 앱 화면" />
+                            </div>
+                            <div>
+                                <img src={attendApp} alt="참여 현황 앱 화면" />
+                            </div>
+                            <div>
+                                <img src={detailApp} alt="게시물 확인 앱 화면" />
+                            </div>
+                        </Slider>
+                    </div>
                 </div>
             </div>
 
