@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import Advantage from './Advantage/Advantage';
 import './Main.css';
 import './Main-Media.css';
 import "slick-carousel/slick/slick.css";
@@ -85,29 +86,17 @@ const Main = () => {
                     </div>    
                     
                     <div className="main-advantage-wrapper">
-                        <div className="main-advantage">
-                            <div className="main-advantage-title">
-                                <img src={travelMate} alt="여행 메이트 만들기" />
-                                <h3>여행 메이트 만들기</h3>
-                            </div>
-                            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                        </div>
+                        <Advantage img={travelMate} alt="여행 메이트 만들기" title="여행 메이트 만들기">
+                            혼자하는 여행도 위드트립과 함께라면 언제든 여행 메이트를 만날 수 있어요
+                        </Advantage>
 
-                        <div className="main-advantage">
-                            <div className="main-advantage-title">
-                                <img src={restaurant} alt="국내여행의 모든 것 확인하기" />
-                                <h3>장소, 활동, 음식 등<br/>국내여행의 모든 것</h3>
-                            </div>
-                            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                        </div>
+                        <Advantage img={restaurant} alt="국내여행의 모든 것 확인하기" title={[<>장소, 활동, 음식 등 <br/>국내여행의 모든 것</>]}>
+                            위치정보, 레저활동, 맛집 등 국내 여행의 모든 정보를 검색할 수 있어요
+                        </Advantage>
 
-                        <div className="main-advantage">
-                            <div className="main-advantage-title">
-                                <img src={calendar} alt="일정 만들기" />
-                                <h3>쉽고 빠르게 일정 만들기</h3>
-                            </div>
-                            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                        </div>
+                        <Advantage img={calendar} alt="일정 만들기" title="쉽고 빠르게 일정 만들기">
+                            내가 원하는 여행 일정을 만들거나 흥미로운 일정에 참여하거나 손쉽게 여행 계획을 세울 수 있어요
+                        </Advantage>
                     </div>
                 </div>
             </div>
