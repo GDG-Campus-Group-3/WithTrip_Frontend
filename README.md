@@ -12,9 +12,9 @@
 
 - 모바일
 <div>
-  <img width="300" alt="위드트립_모바일1" src="https://user-images.githubusercontent.com/48716298/125614306-74b65ecf-426a-4783-aa73-33b7772265ef.png">
-  <img width="300" alt="위드트립_모바일2" src="https://user-images.githubusercontent.com/48716298/125614334-e119b8bf-b65d-4106-9cc6-e845065b88c0.png">
-  <img width="300" alt="위드트립_모바일3" src="https://user-images.githubusercontent.com/48716298/125614335-423f443e-85f5-4046-a85d-eef7ef05d107.png">
+  <img width="290" alt="위드트립_모바일1" src="https://user-images.githubusercontent.com/48716298/125614306-74b65ecf-426a-4783-aa73-33b7772265ef.png">
+  <img width="290" alt="위드트립_모바일2" src="https://user-images.githubusercontent.com/48716298/125614334-e119b8bf-b65d-4106-9cc6-e845065b88c0.png">
+  <img width="290" alt="위드트립_모바일3" src="https://user-images.githubusercontent.com/48716298/125614335-423f443e-85f5-4046-a85d-eef7ef05d107.png">
 </div>
 
 ### 사용 스킬
