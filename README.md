@@ -1,6 +1,6 @@
 # WithTrip
 ### 서비스 소개
-홀로 여행이 외로울 땐, 위드트립을 사용해보세요!
+> 혼자하는 여행이 외로울 땐, 위드트립을 사용해보세요!
 <img src="https://user-images.githubusercontent.com/48716298/125558931-f38e478b-44bc-4bb7-b68d-43b917d19eeb.png">
 <img src="https://user-images.githubusercontent.com/48716298/125558935-163ead35-c9a1-4a71-b84e-566d99033bbb.png">
 
